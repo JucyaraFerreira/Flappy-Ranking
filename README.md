@@ -26,12 +26,12 @@ Aplicação full stack de um jogo estilo Flappy Bird com sistema de autenticaç�
 
 ##  Funcionalidades
 
-*  Sistema de login e autenticação de usuários
-*  Jogo estilo Flappy Bird
-*  Ranking global baseado na melhor pontuação
-*  Ranking pessoal do jogador
-*  Atualização do ranking ao final de cada partida
-*  Sistema de logout
+* Sistema de login com autenticação de usuário e modo visitante 
+* Jogo estilo Flappy Bird
+* Ranking global e ranking pessoal de cada jogador
+* Atualização do ranking ao final de cada partida
+* Customização do personagem 
+* Loja de cosméticos com opções de cores
 
 ---
 
@@ -70,17 +70,18 @@ flappy-ranking/
 
 ---
 
-##  Próximas melhorias
+##  Próximas Melhorias
 
-*  Atualização do ranking em tempo real (WebSocket)
-*  Responsividade para dispositivos móveis
-*  Histórico de partidas do usuário
+* Alternar entre modo claro ou escuro
+* Definir ou editar nickname do usuário
+* Visualizar histórico de partida do jogador
+* Reiniciar partida rapidamente
 
 ---
 
 ##  Autores
 
-Projeto desenvolvido por:
+Projeto desenvolvido por
 
 - [Jucyara Ferreira de Santana](https://github.com/JucyaraFerreira)  
 - [Guilherme Venancio de Moura](https://github.com/RanmaYT)
