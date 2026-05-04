@@ -57,14 +57,71 @@ Aplicação full stack de um jogo estilo Flappy Bird com sistema de autenticaç�
 
 ```plaintext
 flappy-ranking/
-├── backend/
-│   ├── src/
-│         
 │
-├── frontend/
+├── frontend/                      # Next.js 
 │   ├── src/
-│     
+│   │   ├── app/                   # páginas/rotas
+│   │   │   ├── page.js            # jogo
+│   │   │   ├── login/
+│   │   │   ├── register/
+│   │   │   ├── shop/
+│   │   │   └── ranking/
+│   │   │
+│   │   ├── components/
+│   │   │   ├── mainScreenCanvas.jsx
+│   │   │   ├── PlayerSprite.jsx
+│   │   │   └── UI/
+│   │   │
+│   │   ├── services/
+│   │   │   ├── auth.js
+│   │   │   ├── user.js
+│   │   │   ├── shop.js
+│   │   │   └── ranking.js
+│   │   │
+│   │   ├── context/
+│   │   ├── hooks/
+│   │   └── styles/
+│   │
+│   └── package.json
 │
+├── backend/                       # Node + Express
+│   ├── src/
+│   │   ├── routes/
+│   │   │   ├── auth.routes.js
+│   │   │   ├── user.routes.js
+│   │   │   ├── shop.routes.js
+│   │   │   └── ranking.routes.js
+│   │   │
+│   │   ├── controllers/
+│   │   │   ├── auth.controller.js
+│   │   │   ├── user.controller.js
+│   │   │   ├── shop.controller.js
+│   │   │   └── ranking.controller.js
+│   │   │
+│   │   ├── services/
+│   │   │   ├── auth.service.js
+│   │   │   ├── shop.service.js
+│   │   │   └── ranking.service.js
+│   │   │
+│   │   ├── db/
+│   │   │   ├── connection.js
+│   │   │   └── queries.js
+│   │   │
+│   │   ├── middlewares/
+│   │   │   └── auth.middleware.js
+│   │   │
+│   │   └── server.js
+│   │
+│   └── package.json
+│
+├── database/
+│   └── schema.sql
+│
+├── docs/                          # documentação do projeto
+│   ├── diagrama.plantuml          # código do diagrama
+│   └── diagrama.png               
+│
+├── .env
 └── README.md
 ```
 
