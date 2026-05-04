@@ -1,0 +1,26 @@
+@startuml diagrama
+
+left to right direction
+
+actor "Usuário Visitante (Guest)" as g
+actor "Usuário Logado" as ul
+
+rectangle "Sistema" {
+    usecase "Registrar novo usuário" as UC1
+    usecase "Fazer Log-in" as UC2
+    usecase "Iniciar Jogo" as UC3
+    usecase "Comprar cosméticos" as UC4
+    usecase "Customizar personagem" as UC5
+    usecase "Ver Ranking" as UC6
+}
+
+g --> UC1
+g --> UC2
+g --> UC3
+
+ul --> UC3
+ul --> UC4
+ul --> UC5
+ul --> UC6
+
+@enduml
