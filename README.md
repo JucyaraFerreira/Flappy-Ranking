@@ -127,6 +127,11 @@ flappy-ranking/
 
 ---
 
+## Protótipo no Figma
+O protótipo navegável das telas do projeto no Figma: 
+
+[Acessar protótipo no Figma](https://www.figma.com/proto/itJPxLnNz3F98j8Di78M8G/Flappy-Ranking?node-id=0-1&t=6wIqyo4kDgfRsnJc-1)
+
 ##  Próximas Melhorias
 
 * Alternar entre modo claro ou escuro
