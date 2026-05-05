@@ -11,33 +11,7 @@ body {
   overflow: hidden;
 }
 
-/* Página principal */
-
-.login-page {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.button-icon {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  display: block;
-}
-
-
-/* Área direita */
-
-.login-area {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+/* background */
 
 .sky-background {
   position: absolute;
@@ -234,7 +208,6 @@ body {
   box-shadow: inset -8px 0 rgba(0, 0, 0, 0.15);
 }
 
-
 .pipe-top {
   top: 0;
 }
@@ -340,7 +313,134 @@ body {
   animation: moveGround 3s linear infinite;
 }
 
-/* Card de login */
+/* Tela de registro */
+
+.register-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Pixelify Sans", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-page .sky-background {
+  filter: blur(4px);
+  transform: scale(1.02);
+}
+
+.register-card {
+  position: relative;
+  z-index: 5;
+  width: 420px;
+  border-radius: 24px;
+  min-height: 450px;
+  padding: 34px 44px 18px;
+  background: rgba(217, 164, 65, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.register-card h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 42px;
+}
+
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form label {
+  font-size: 14px;
+  font-weight: 900;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.register-form input {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 9px;
+  background: white;
+  outline: none;
+  padding: 0 12px;
+
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 16px;
+
+  margin-bottom: 26px;
+}
+
+.register-button {
+  align-self: center;
+
+  width: 110px;
+  height: 42px;
+  margin-top: 8px;
+
+  border: none;
+  border-radius: 12px;
+  background: white;
+
+  color: #111;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.register-login-link {
+  margin-top: auto;
+  padding-top: 36px;
+
+  font-size: 12px;
+  font-weight: 900;
+  color: #111;
+  text-align: center;
+}
+
+.register-login-link a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.register-login-link a:hover {
+  text-decoration: underline;
+}
+
+/* login */
+
+.login-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
 .login-card {
   position: relative;
@@ -385,6 +485,22 @@ body {
   font-weight: bold;
 }
 
+.register-text {
+  color: #111;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.register-text a {
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
 .login-card a {
   color: #111;
   text-decoration: none;
@@ -394,8 +510,6 @@ body {
 .login-card a:hover {
   text-decoration: underline;
 }
-
-/* Link que envolve o botão Login */
 
 .login-button-link {
   display: block;
@@ -407,8 +521,6 @@ body {
 .login-button-link:hover {
   text-decoration: none;
 }
-
-/* Garante que o botão Login nunca fique sublinhado */
 
 .login-button-link:hover .login-button {
   text-decoration: none;
@@ -427,6 +539,19 @@ body {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.button-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
 .login-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
@@ -436,6 +561,7 @@ body {
 .login-links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
   margin-top: 18px;
   font-size: 12px;
@@ -620,6 +746,191 @@ body {
 
 .exit-button:hover {
   transform: translateY(-3px);
+}
+
+/* Tela de perfil */
+
+.user-page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.user-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  filter: blur(5px);
+  transform: scale(1.03);
+  z-index: 1;
+}
+
+.user-content {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 44px;
+  transform: translateY(-20px);
+}
+
+.user-profile-card {
+  width: 370px;
+  height: 460px;
+  background: #4c98f7;
+  border: 5px solid #3f3f3f;
+  box-shadow: inset 8px 0 rgba(255, 255, 255, 0.18);
+  padding: 18px 28px 34px;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: 26px;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.profile-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 24px;
+}
+
+.profile-username {
+  text-align: center;
+  color: #b9d7ff;
+  font-size: 22px;
+  margin-bottom: 52px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.profile-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 60px;
+  align-items: center;
+  gap: 18px;
+}
+
+.profile-row span:first-child {
+  overflow-wrap: break-word;
+  line-height: 1.18;
+}
+
+.profile-value {
+  color: #b9d7ff;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ranking-value {
+  transform: translateX(3.5px);
+}
+
+.user-right-area {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.user-box {
+  width: 420px;
+  background: #4c98f7;
+  border: 4px solid #3f3f3f;
+  color: white;
+  box-shadow: inset 8px 0 rgba(255, 255, 255, 0.18);
+}
+
+.achievements-box {
+  height: 230px;
+  padding-top: 16px;
+}
+
+.settings-box {
+  height: 180px;
+  padding: 14px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-box h2 {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.settings-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 3px 0;
+  text-decoration: none;
+}
+
+.settings-item svg {
+  width: 18px;
+  height: 18px;
+  stroke: white;
+  stroke-width: 3;
+}
+
+.settings-item:hover {
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.back-button {
+  position: absolute;
+  z-index: 6;
+  left: 12px;
+  bottom: 14px;
+  background: #f2d889;
+  color: #111;
+  border: 2px solid #9f8540;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.logoff-button {
+  margin-top: 5px;
+}
+
+.reset-button {
+  margin-top: 5px;
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
 }
 
 /* Animações */
