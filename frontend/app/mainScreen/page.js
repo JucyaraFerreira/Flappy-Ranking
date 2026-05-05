@@ -85,13 +85,12 @@ export default function MainScreenPage() {
 
           <h1 className="main-screen-title">FLAPPY RANKED</h1>
 
-            <div className="main-screen-user">
-              <Link href="/user" className="user-icon-link">
-                <img src="/icons/user.png" alt="User profile" className="user-icon" />
-              </Link>
-
-              <span className="user-name">Usuario</span>
-            </div>
+           <div className="main-screen-user">
+            <Link href="/user" className="user-icon-link">
+             <img src="/icons/user.png" alt="User profile" className="user-icon" />
+             <span className="user-name">Usuario</span>
+           </Link>
+         </div>
 
         </header>
 
@@ -111,10 +110,6 @@ export default function MainScreenPage() {
              Loja
           </Link>
         </div>
-
-        <Link href="/" className="main-screen-exit-button">
-          ↪ Sair
-        </Link>
       </section>
     </main>
   );

@@ -9,7 +9,7 @@ export default function Home() {
         <div className="sky-background">
           <div className="clouds cloud-layer-one"></div>
           <div className="clouds cloud-layer-two"></div>
-<div className="pipes">
+     <div className="pipes">
   <div className="pipes-track">
     <div className="pipe-set pipe-set-1">
       <div className="pipe pipe-top"></div>
