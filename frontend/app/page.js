@@ -81,10 +81,10 @@ export default function Home() {
         <div className="login-card">
           <h1>Login</h1>
 
-          <label>Usuario</label>
+          <label>Usuário</label>
           <input type="text" />
 
-          <label>Password</label>
+          <label>Senha</label>
           <input type="password" />
 
           <div className="forgot-password">
@@ -96,9 +96,13 @@ export default function Home() {
           </Link>
 
           <div className="login-links">
-            <Link href="mainScreen">Continue como visitante</Link>
-            <Link href="/register">Não tem uma conta? Se registre aqui</Link>
-          </div>
+           <Link href="/mainScreen">Continue como visitante</Link>
+
+            <p className="register-text">
+              Não tem uma conta?{" "}
+              <Link href="/register">Registre-se</Link>
+           </p>
+         </div>
         </div>
       </section>
     </main>
